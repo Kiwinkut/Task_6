@@ -1,5 +1,16 @@
-const consoleLog = document.querySelector(`#consoleLog`);
+const conso = document.querySelector(`#conso`);
+conso.addEventListener(`click`, function()  {
+  console.log(`Метод для выполнения в web консоль`)
+})
 
-consoleLog.addEventListener(`click`, () => {
-    alert(`Служит для вывода информации о консоль`);
+const aler = document.querySelector(`#aler`);
+
+aler.addEventListener(`click`, function() {
+  alert(`Для выведения модального окна`)
+})
+
+const promp = document.querySelector(`#promp`);
+
+promp.addEventListener(`click`, function() {
+  prompt(`Ввод текста в модальном окне`)
 })
